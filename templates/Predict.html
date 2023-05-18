@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AirLine Prediction</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+              integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="static/Style.css">
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <div class='row' id='section'>
+            <div class='col-md-6 col-lg-6 col-6 col-md-12 col-12'>
+                <div class='show'>
+                    <h1>MACHINE LEARNING</h1>
+                    <h5>Identifying online passanger satisfaction using machine learning</h5>
+                    <h3>PREDICTION:</h3>
+                </div>
+            </div>
+            <div class='col-md-6 col-lg-6 col-6 col-md-12 col-12'
+                 style="text-align:center;">
+                <button class="btn btn-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseDrop"
+                        aria-expanded="false"
+                        aria-controls="collapseExample">
+                    Airline Features
+                </button>
+                <div class="collapse" id="collapseDrop" style='margin-top:1rem;'>
+                    <div class="card card-body">
+                        <form action="" method="POST">
+                        Gender:
+                        <select name='Gender'class="form-control" id='gender'>
+                            <option value='female'>
+                                Female
+                            </option>
+                            <option value='male'>
+                                Male
+                            </option>
+                        </select>
+                        <input type='text' name='Age' class="form-control" placeholder='Enter Age'>
+  
+                        Type of Travel:
+                        <select name='ttravel'class="form-control" id='ttravel'>
+                            <option value=' Bussiness Travel'>
+                                Bussiness Travel
+                            </option>
+                            <option value='Personal Travel'>
+                                Personal Travel
+                            </option>
+                        </select>
+                       Class:
+                       <select name='ttravel'class="form-control" id='ttravel'>
+                        <option value='Business'>
+                            Business
+                        </option>
+                        <option value='Eco'>
+                           Eco
+                        </option>
+                        <option value='Eco Plus'>
+                           Eco Plus
+                        </option>
+                    </select>
+                   
+                    <input type='text' name='flight_distance' class="form-control" placeholder='Flight Distance'>
+                   
+                    <input type='text' name='dadtc' class="form-control" placeholder='Depature/Arrival time'>
+                   
+                    <input type='text' name='iws' class="form-control" placeholder='Inflight WiFi Service'>
+                   
+                    <input type='text' name='eob' class="form-control" placeholder='Ease of Online Booking'>
+                   
+                    <input type='text' name='gl' class="form-control" placeholder='Gate Location'>
+                   
+                    <input type='text' name='fd' class="form-control" placeholder='Food and Drink'>
+                   
+                    <input type='text' name='ob' class="form-control" placeholder='Online Boarding'>
+                   
+                    <input type='text' name='sc' class="form-control" placeholder='Seat Comfort'>
+                   
+                    <input type='text' name='ie' class="form-control" placeholder='Inflight Entertainement'>
+                   
+                    <input type='text' name='obs' class="form-control" placeholder='On Board Services'>
+
+                    <input type='text' name='lrs' class="form-control" placeholder='Leg room Service'>
+                   
+                    <input type='text' name='bh' class="form-control" placeholder='Baggage Handling'>
+                   
+                    <input type='text' name='cs' class="form-control" placeholder='Checkin Service'>
+                   
+                    <input type='text' name='is' class="form-control" placeholder='Inflight Service'>
+                   
+                    <input type='text' name='cl' class="form-control" placeholder='Cleanliness'>
+                   
+                    <input type='text' name='ddm' class="form-control" placeholder='Depature Delay in Minutes'>
+
+                    <input type='text' name='adm' class="form-control" placeholder='arrival Delay in Minutes'>
+  
+
+                    <input type='submit' value='Submit' class='btn btn-primary btn-lg'>
+                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
